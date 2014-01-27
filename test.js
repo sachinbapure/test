@@ -75,6 +75,6 @@ car.measureSpeed(function(speed) {
 });
 
 car2.measureSpeed(function(speed) {
-	console.log('car2 is running at:', speed, 'km/h')
+	console.log('car2 is running at (in develop branch):', speed, 'km/h')
 });
 
