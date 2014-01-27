@@ -71,7 +71,7 @@ console.log(car2.getSteeringSide());
 console.log(car2.getFuelType());
 
 car.measureSpeed(function(speed) {
-	console.log('car:', speed, 'km/h');
+	console.log('car (in develop branch):', speed, 'km/h');
 });
 
 car2.measureSpeed(function(speed) {
