@@ -40,9 +40,10 @@ Car.prototype.getFuelType = function() {
 	return this.fuelType;
 };
 
-Car.prototype.measureSpeed = function(callbackWhenFinishedMeasuring) {
+Car.prototype.measureSpeed = function(xyz) {
+	console.log('calling measureSpeed');
 	setTimeout(function() {
-		callbackWhenFinishedMeasuring(Math.random() * 100);
+		xyz(Math.random() * 100);
 	}, 10 * 1000);
 };
 
@@ -74,6 +75,6 @@ car.measureSpeed(function(speed) {
 });
 
 car2.measureSpeed(function(speed) {
-	console.log('car2:', speed, 'km/h')
+	console.log('car2 is running at:', speed, 'km/h')
 });
 
